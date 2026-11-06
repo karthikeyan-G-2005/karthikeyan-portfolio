@@ -13,10 +13,6 @@ Anything left empty shows "coming soon" instead of a fake link.
 Resume: put the PDF in `assets/` (e.g. `assets/Karthikeyan_G_Resume.pdf`) and set
 `resume: "assets/Karthikeyan_G_Resume.pdf"`, or paste a Google Drive link.
 
-Contact form: create a free form at https://formspree.io, copy the URL
-(`https://formspree.io/f/xxxxxxx`) into `formEndpoint`. Without it, the form
-falls back to opening your email app (if `email` is set).
-
 ## Projects and certificates
 Edit `js/data.js`.
 - Add `github`, `demo`, `tech`, `features` per project.
