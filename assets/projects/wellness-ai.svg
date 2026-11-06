@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Wellness AI">
+<defs>
+<radialGradient id="g" cx="70%" cy="20%" r="80%"><stop offset="0" stop-color="#E53945" stop-opacity=".55"/><stop offset="1" stop-color="#101014" stop-opacity="0"/></radialGradient>
+<pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+<filter id="b"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="800" height="500" fill="#14141a"/><rect width="800" height="500" fill="url(#p)"/><rect width="800" height="500" fill="url(#g)"/>
+<g stroke="#FF5964" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M400 330C300 260 270 210 300 170c25-32 80-22 100 20 20-42 75-52 100-20 30 40 0 90-100 160z" stroke-width="4"/><path d="M150 270h130l25-55 40 100 35-70 30 25h240" opacity=".8"/></g>
+<g fill="#E53945"><circle cx="150" cy="270" r="5" opacity="1"/><circle cx="650" cy="270" r="5" opacity="1"/><circle cx="120" cy="110" r="3" opacity="0.6"/><circle cx="690" cy="110" r="4" opacity="0.5"/></g>
+</svg>

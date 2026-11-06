@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Hospital management system">
+<defs>
+<radialGradient id="g" cx="70%" cy="20%" r="80%"><stop offset="0" stop-color="#E53945" stop-opacity=".55"/><stop offset="1" stop-color="#101014" stop-opacity="0"/></radialGradient>
+<pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+<filter id="b"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="800" height="500" fill="#14141a"/><rect width="800" height="500" fill="url(#p)"/><rect width="800" height="500" fill="url(#g)"/>
+<g stroke="#FF5964" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="190" y="120" width="260" height="260" rx="14"/><path d="M320 180v140M250 250h140" stroke-width="10"/><path d="M490 330h50l20-60 30 100 25-60h60" opacity=".85"/></g>
+<g fill="#E53945"><circle cx="320" cy="250" r="6" opacity="1"/></g>
+</svg>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karthikeyan G | Data Science Student | AI &amp; Machine Learning</title>
+  <meta name="description"
+    content="Portfolio of Karthikeyan G, MSc Data Science student at Vellore Institute of Technology. Data Science, Artificial Intelligence, Machine Learning and Python projects.">
+  <meta name="author" content="Karthikeyan G">
+  <meta name="theme-color" content="#101014">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Karthikeyan G | Data Science Student">
+  <meta property="og:description"
+    content="Transforming complex data into meaningful insights and building intelligent solutions with Data Science, AI and Machine Learning.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Karthikeyan G","jobTitle":"Data Science Student","alumniOf":{"@type":"CollegeOrUniversity","name":"Vellore Institute of Technology"},"knowsAbout":["Data Science","Machine Learning","Artificial Intelligence","Python"]}
+</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { bg: '#101014', bg2: '#18181F', card: '#25252D', accent: '#E53945', accent2: '#FF5964', muted: '#A1A1AA' },
+          fontFamily: { head: ['"Space Grotesk"', 'sans-serif'], body: ['Inter', 'sans-serif'], mono: ['"JetBrains Mono"', 'monospace'] }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-bg text-white font-body antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header id="nav" class="nav fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
+      <a href="#home" class="logo font-head text-lg font-bold tracking-tight" aria-label="Karthikeyan G, home">
+        <span class="logo-mark">KG</span><span class="hidden sm:inline">Karthikeyan G</span>
+      </a>
+      <nav aria-label="Primary" class="hidden lg:block">
+        <ul class="flex items-center gap-1 text-sm">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="menuBtn" class="menu-btn lg:hidden" aria-label="Open menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobileMenu" class="mobile-menu lg:hidden" aria-label="Mobile">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="home" class="hero relative flex min-h-screen items-center overflow-hidden pt-24 pb-16">
+      <div class="bg-grid" aria-hidden="true"></div>
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="relative mx-auto grid w-full max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
+        <div class="hero-copy order-2 lg:order-1">
+          <p class="font-mono text-sm text-accent2 hero-in" id="heroHello">HELLO, I’M</p>
+          <h1 class="hero-name font-head font-bold leading-[0.95] hero-in" aria-label="Karthikeyan G">KARTHIKEYAN <span
+              class="text-accent">G</span></h1>
+          <p class="mt-4 font-head text-xl tracking-wide text-white/90 sm:text-2xl hero-in">DATA SCIENCE STUDENT</p>
+          <p class="role-line mt-3 font-mono text-base text-accent2 sm:text-lg hero-in" aria-live="off">
+            <span class="text-muted">&gt;</span> <span id="roleText"></span><span class="caret"
+              aria-hidden="true"></span>
+          </p>
+          <p class="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg hero-in">I’m passionate about
+            transforming complex data into meaningful insights and building intelligent solutions through Data Science,
+            Artificial Intelligence and Machine Learning.</p>
+          <div class="mt-8 flex flex-wrap gap-3 hero-in">
+            <a href="#projects" class="btn btn-primary"><i data-lucide="rocket"></i>Explore My Projects</a>
+            <a href="#" data-link="resume" class="btn btn-ghost" download><i data-lucide="download"></i>Download
+              Resume</a>
+            <a href="#contact" class="btn btn-ghost"><i data-lucide="mail"></i>Contact Me</a>
+          </div>
+          <p id="availability" class="avail mt-7 hero-in" hidden><span class="dot" aria-hidden="true"></span><span
+              id="availText"></span></p>
+        </div>
+
+        <div class="hero-visual order-1 lg:order-2">
+          <div class="portrait-wrap">
+            <div class="ring ring-a" aria-hidden="true"></div>
+            <div class="ring ring-b" aria-hidden="true"></div>
+            <div class="portrait">
+              <img src="assets/img/karthikeyan.webp"
+                srcset="assets/img/karthikeyan-sm.webp 560w, assets/img/karthikeyan.webp 1000w"
+                sizes="(min-width:1024px) 480px, 80vw" width="1000" height="1000"
+                alt="Portrait of Karthikeyan G in a dark red suit against a red-lit background" fetchpriority="high">
+            </div>
+            <span class="chip chip-1" data-drag>&lt;/&gt;</span>
+            <span class="chip chip-2" data-drag>Python</span>
+            <span class="chip chip-3" data-drag>{ ML }</span>
+            <span class="chip chip-4" data-drag>SQL</span>
+            <span class="chip chip-5" data-drag>CNN</span>
+            <span class="chip chip-6" data-drag>∑ PCA</span>
+          </div>
+          <p class="mt-3 text-center font-mono text-xs text-muted/70 hidden lg:block">drag the floating cards</p>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About"><i data-lucide="chevron-down"></i></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" data-section>
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="sec-title font-head" data-type>ABOUT ME</h2>
+        <p class="sec-sub" data-type>Data. Intelligence. Impact.</p>
+        <div class="mt-10 grid gap-8 lg:grid-cols-5">
+          <div class="lg:col-span-3 space-y-5 text-base leading-relaxed text-muted sm:text-lg" data-reveal="left">
+            <p>I am an MSc Data Science student at Vellore Institute of Technology with a strong interest in Data
+              Science, Artificial Intelligence, Machine Learning and Data Analytics.</p>
+            <p>I enjoy transforming complex datasets into meaningful insights and developing intelligent applications
+              that solve real-world problems.</p>
+            <p>Through academic projects, internships and practical development experience, I continuously strengthen my
+              technical, analytical and problem-solving skills.</p>
+            <p>My interests include predictive analytics, deep learning, computer vision, data visualization and
+              AI-powered applications.</p>
+            <p>My career goal is to contribute to impactful technology projects while continuously learning and growing
+              as a Data Science professional.</p>
+          </div>
+          <aside class="lg:col-span-2 space-y-5" data-reveal="right">
+            <div class="glass goal-card">
+              <i data-lucide="target" class="text-accent2"></i>
+              <h3 class="font-head text-xl font-semibold mt-3">Career Goal</h3>
+              <p class="mt-2 text-muted">To contribute to impactful technology projects while continuously learning and
+                growing as a Data Science professional.</p>
+            </div>
+            <div class="glass">
+              <h3 class="font-head text-lg font-semibold">Areas of interest</h3>
+              <ul class="mt-3 flex flex-wrap gap-2">
+                <li class="tag">Data science</li>
+                <li class="tag">Predictive Analytics</li>
+                <li class="tag">Deep Learning</li>
+                <li class="tag">Computer Vision</li>
+                <li class="tag">Data Visualization</li>
+                <li class="tag">AI-powered Apps</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt" data-section>
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="sec-title font-head" data-type>SKILLS &amp; TECHNOLOGIES</h2>
+        <p class="sec-sub" data-type>The tools I work with.</p>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-reveal="stagger">
+          <article class="skill-card" data-stagger>
+            <div class="sk-head"><i data-lucide="code-2"></i>
+              <h3>Programming</h3>
+            </div>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>C</li>
+              <li>C++</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-stagger>
+            <div class="sk-head"><i data-lucide="bar-chart-3"></i>
+              <h3>Data Science</h3>
+            </div>
+            <ul>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Excel</li>
+              <li>Data Analysis</li>
+              <li>Data Visualization</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-stagger>
+            <div class="sk-head"><i data-lucide="line-chart"></i>
+              <h3>Machine Learning</h3>
+            </div>
+            <ul>
+              <li>Regression</li>
+              <li>Classification</li>
+              <li>PCA</li>
+              <li>Predictive Analytics</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-stagger>
+            <div class="sk-head"><i data-lucide="brain-circuit"></i>
+              <h3>AI &amp; Deep Learning</h3>
+            </div>
+            <ul>
+              <li>Artificial Intelligence</li>
+              <li>CNN</li>
+              <li>Deep Learning</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-stagger>
+            <div class="sk-head"><i data-lucide="scan-face"></i>
+              <h3>Computer Vision</h3>
+            </div>
+            <ul>
+              <li>OpenCV</li>
+              <li>Facial Emotion Detection</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-stagger>
+            <div class="sk-head"><i data-lucide="database"></i>
+              <h3>Databases</h3>
+            </div>
+            <ul>
+              <li>SQL</li>
+              <li>MySQL</li>
+              <li>NoSQL</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-stagger>
+            <div class="sk-head"><i data-lucide="globe"></i>
+              <h3>Web Development</h3>
+            </div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-stagger>
+            <div class="sk-head"><i data-lucide="wrench"></i>
+              <h3>Tools</h3>
+            </div>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-section>
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="sec-title font-head" data-type>PROJECT SHOWCASE</h2>
+        <p class="sec-sub" data-type>Selected work across AI, web and management systems.</p>
+        <div class="filters mt-8" role="group" aria-label="Filter projects" data-reveal="up">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="ai" aria-pressed="false">AI / ML</button>
+          <button class="filter" data-filter="web" aria-pressed="false">Web Development</button>
+          <button class="filter" data-filter="app" aria-pressed="false">Applications</button>
+          <button class="filter" data-filter="mgmt" aria-pressed="false">Management Systems</button>
+          <button class="filter" data-filter="internship" aria-pressed="false">Internship</button>
+        </div>
+        <p class="mt-3 font-mono text-xs text-muted/70">Tip: on desktop you can drag a card and it springs back. On
+          touch screens, drag the grip handle.</p>
+        <div id="projectGrid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt" data-section>
+      <div class="mx-auto max-w-5xl px-5 lg:px-8">
+        <h2 class="sec-title font-head" data-type>PROFESSIONAL EXPERIENCE</h2>
+        <p class="sec-sub" data-type>Where I have built and learned.</p>
+        <ol class="timeline mt-12">
+          <li class="tl-item" data-tl>
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card glass">
+              <div class="tl-logo logo-dark"><img src="assets/logos/inovara.jpg" alt="Inovara Technologies logo"
+                  width="160" height="82" loading="lazy"></div>
+              <div>
+                <h3 class="font-head text-xl font-semibold">Founder, Co-Founder &amp; CEO</h3>
+                <p class="text-accent2">Inovara Technologies</p>
+                <p class="meta">August 2026 – Present · Ranipet, Tamil Nadu, India · Remote</p>
+                <p class="mt-3 text-muted">Technology company built around the idea: Innovate, Build, Transform.</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item" data-tl>
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card glass">
+              <div class="tl-logo"><img src="assets/logos/istudio.png" alt="Internship Studio logo" width="160"
+                  height="61" loading="lazy"></div>
+              <div>
+                <h3 class="font-head text-xl font-semibold">Data Science Intern</h3>
+                <p class="text-accent2">Internship Studio (iStudio)</p>
+                <p class="meta">20 August 2026 – 24 October 2026 · Remote</p>
+                <p class="mt-3 text-muted">Data Science and practical learning.</p>
+                <a href="#certificates" class="rel-link">Related: Internship &amp; Training certificates</a>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item" data-tl>
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card glass">
+              <div class="tl-logo"><img src="assets/logos/decodelabs.png" alt="DecodeLabs logo" width="160" height="54"
+                  loading="lazy"></div>
+              <div>
+                <h3 class="font-head text-xl font-semibold">Data Science Intern</h3>
+                <p class="text-accent2">DecodeLabs</p>
+                <p class="meta">August 2026 – September 2026 · Remote</p>
+                <p class="mt-3 text-muted">Virtual internship in Data Science, with a letter of recommendation.</p>
+                <a href="#certificates" class="rel-link">Related: Internship certificate &amp; recommendation</a>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item" data-tl>
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card glass">
+              <div class="tl-logo"><img src="assets/logos/codebind.png" alt="CodeBind Technologies logo" width="160"
+                  height="56" loading="lazy"></div>
+              <div>
+                <h3 class="font-head text-xl font-semibold">Web Development Intern</h3>
+                <p class="text-accent2">CodeBind Technologies, Chennai</p>
+                <p class="meta">19 May 2025 – 19 June 2025</p>
+                <p class="mt-3 text-muted">Internship and inplant training in Web Development, including the Hospital
+                  Management System project (HTML, CSS, JavaScript, PHP, MySQL).</p>
+                <a href="#projects" class="rel-link">Related: Hospital Management System</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section" data-section>
+      <div class="mx-auto max-w-5xl px-5 lg:px-8">
+        <h2 class="sec-title font-head" data-type>EDUCATION</h2>
+        <p class="sec-sub" data-type>Academic journey.</p>
+        <ol class="timeline mt-12">
+          <li class="tl-item" data-tl><span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card glass">
+              <div class="tl-logo"><img src="assets/logos/vit.png" alt="Vellore Institute of Technology logo"
+                  width="160" height="50" loading="lazy"></div>
+              <div>
+                <h3 class="font-head text-xl font-semibold">Master of Science – Data Science</h3>
+                <p class="text-accent2">Vellore Institute of Technology</p>
+                <p class="meta">July 2026 – May 2028</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item" data-tl><span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card glass">
+              <div class="tl-logo"><img src="assets/logos/vit.png" alt="Vellore Institute of Technology logo"
+                  width="160" height="50" loading="lazy"></div>
+              <div>
+                <h3 class="font-head text-xl font-semibold">Bachelor of Computer Applications – Data Science</h3>
+                <p class="text-accent2">Vellore Institute of Technology</p>
+                <p class="meta">July 2023 – July 2026</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item" data-tl><span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card glass">
+              <div class="tl-logo badge" aria-hidden="true">VM</div>
+              <div>
+                <h3 class="font-head text-xl font-semibold">Higher Secondary Education</h3>
+                <p class="text-accent2">Vethathiri Maharishi Higher Secondary School</p>
+                <p class="meta">June 2022 – March 2023</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item" data-tl><span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card glass">
+              <div class="tl-logo badge" aria-hidden="true">VM</div>
+              <div>
+                <h3 class="font-head text-xl font-semibold">SSLC</h3>
+                <p class="text-accent2">Vethathiri Maharishi Higher Secondary School</p>
+                <p class="meta">June 2020 – March 2021</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section alt" data-section>
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <h2 class="sec-title font-head" data-type>CERTIFICATIONS &amp; ACHIEVEMENTS</h2>
+        <p class="sec-sub" data-type>Verified credentials and training.</p>
+        <div id="certGrid" class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" data-section>
+      <div class="mx-auto max-w-3xl px-5 lg:px-8">
+        <h2 class="sec-title font-head" data-type>LET'S BUILD SOMETHING INTELLIGENT TOGETHER.</h2>
+        <p class="sec-sub" data-type>Open to collaborations, internships and ideas.</p>
+        <div class="mt-10 space-y-4" data-reveal="up">
+          <a class="contact-row" data-link="email" href="#"><i data-lucide="mail"></i><span><b>Email</b><small
+                data-label>Add email in js/config.js</small></span></a>
+          <a class="contact-row" data-link="linkedin" href="#" target="_blank" rel="noopener noreferrer"><i
+              data-lucide="linkedin"></i><span><b>LinkedIn</b><small data-label>Add link in
+                js/config.js</small></span></a>
+          <a class="contact-row" data-link="github" href="#" target="_blank" rel="noopener noreferrer"><i
+              data-lucide="github"></i><span><b>GitHub</b><small data-label>Add link in js/config.js</small></span></a>
+          <a class="contact-row" data-link="resume" href="#" download><i
+              data-lucide="file-down"></i><span><b>Resume</b><small data-label>Add link in
+                js/config.js</small></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div
+      class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-10 text-center sm:flex-row sm:text-left lg:px-8">
+      <div>
+        <p class="font-head text-lg font-semibold">Karthikeyan G</p>
+        <p class="text-sm text-muted">MSc Data Science Student</p>
+        <p class="font-mono text-xs text-accent2">Data Science | AI | Machine Learning</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <a class="icon-btn" data-link="github" href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            data-lucide="github"></i></a>
+        <a class="icon-btn" data-link="linkedin" href="#" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a class="icon-btn" href="#home" aria-label="Back to top"><i data-lucide="arrow-up"></i></a>
+      </div>
+    </div>
+    <p class="border-t border-white/5 py-4 text-center text-xs text-muted">© <span id="yr">2026</span> Karthikeyan G.
+      All rights reserved.</p>
+  </footer>
+
+  <!-- Project modal -->
+  <dialog id="projectModal" class="modal" aria-labelledby="pmTitle">
+    <div class="modal-body">
+      <button class="modal-close" data-close aria-label="Close details"><i data-lucide="x"></i></button>
+      <img id="pmImg" alt="" class="pm-img" width="800" height="500" hidden>
+      <div class="p-6 sm:p-8">
+        <p id="pmCat" class="font-mono text-xs text-accent2"></p>
+        <h3 id="pmTitle" class="font-head text-2xl font-bold mt-1"></h3>
+        <p id="pmDesc" class="mt-3 text-muted"></p>
+        <h4 class="font-head font-semibold mt-6">Technologies</h4>
+        <ul id="pmTech" class="mt-2 flex flex-wrap gap-2"></ul>
+        <h4 class="font-head font-semibold mt-6">Main features</h4>
+        <ul id="pmFeat" class="mt-2 list-disc pl-5 text-muted space-y-1"></ul>
+        <div id="pmLinks" class="mt-7 flex flex-wrap gap-3"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Certificate lightbox -->
+  <dialog id="lightbox" class="modal lightbox" aria-label="Certificate viewer">
+    <button class="modal-close" data-close aria-label="Close viewer"><i data-lucide="x"></i></button>
+    <img id="lbImg" alt="">
+    <p id="lbCap" class="lb-cap"></p>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

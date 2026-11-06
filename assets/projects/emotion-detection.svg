@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Facial emotion detection">
+<defs>
+<radialGradient id="g" cx="70%" cy="20%" r="80%"><stop offset="0" stop-color="#E53945" stop-opacity=".55"/><stop offset="1" stop-color="#101014" stop-opacity="0"/></radialGradient>
+<pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+<filter id="b"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="800" height="500" fill="#14141a"/><rect width="800" height="500" fill="url(#p)"/><rect width="800" height="500" fill="url(#g)"/>
+<g stroke="#FF5964" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="270" y="110" width="260" height="280" rx="14" stroke-dasharray="14 10"/><path d="M270 150v-40h40M530 150v-40h-40M270 350v40h40M530 350v40h-40" stroke-width="5"/><circle cx="345" cy="220" r="14"/><circle cx="455" cy="220" r="14"/><path d="M335 305c40 35 90 35 130 0"/><path d="M200 250h-60M600 250h60M200 210h-90M600 210h90" opacity=".5"/></g>
+<g fill="#E53945"><circle cx="140" cy="250" r="4" opacity="1"/><circle cx="660" cy="250" r="4" opacity="1"/><circle cx="110" cy="210" r="3" opacity="0.7"/><circle cx="690" cy="210" r="3" opacity="0.7"/></g>
+</svg>

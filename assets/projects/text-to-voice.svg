@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Text to voice">
+<defs>
+<radialGradient id="g" cx="70%" cy="20%" r="80%"><stop offset="0" stop-color="#E53945" stop-opacity=".55"/><stop offset="1" stop-color="#101014" stop-opacity="0"/></radialGradient>
+<pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+<filter id="b"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="800" height="500" fill="#14141a"/><rect width="800" height="500" fill="url(#p)"/><rect width="800" height="500" fill="url(#g)"/>
+<g stroke="#FF5964" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="180" y="120" width="180" height="250" rx="12"/><path d="M215 170h110M215 205h110M215 240h80M215 275h110M215 310h60" opacity=".8"/><path d="M420 245h30l30-40v80l-30-40"/><path d="M510 205c25 25 25 55 0 80M545 180c40 40 40 100 0 130M580 155c55 55 55 135 0 190" opacity=".85"/></g>
+<g fill="#E53945"><circle cx="400" cy="245" r="4" opacity="1"/></g>
+</svg>

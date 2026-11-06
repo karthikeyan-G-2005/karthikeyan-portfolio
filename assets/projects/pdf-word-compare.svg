@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="PDF and Word comparison">
+<defs>
+<radialGradient id="g" cx="70%" cy="20%" r="80%"><stop offset="0" stop-color="#E53945" stop-opacity=".55"/><stop offset="1" stop-color="#101014" stop-opacity="0"/></radialGradient>
+<pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+<filter id="b"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="800" height="500" fill="#14141a"/><rect width="800" height="500" fill="url(#p)"/><rect width="800" height="500" fill="url(#g)"/>
+<g stroke="#FF5964" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="140" y="110" width="210" height="280" rx="12"/><rect x="450" y="110" width="210" height="280" rx="12"/><path d="M175 165h140M175 205h140M175 245h90M175 285h140M175 325h70" opacity=".8"/><path d="M485 165h140M485 205h140M485 285h140M485 325h110" opacity=".8"/><path d="M370 220l30-30 30 30M370 280l30 30 30-30"/></g>
+<g fill="#E53945"><rect x="480" y="236" width="150" height="20" rx="4" opacity=".35"/><rect x="170" y="236" width="150" height="20" rx="4" opacity=".2"/></g>
+</svg>
